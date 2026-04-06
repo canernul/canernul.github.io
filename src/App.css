@@ -1,0 +1,254 @@
+/* -------------------- GLOBAL -------------------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #243c2f;
+  color: #DAD7CD;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;        /* unified size */
+  font-weight: bold;       /* bold for all headings */
+  margin-bottom: 16px;
+  color: #D4AF37;            /* unified color */
+  text-align: center;      /* headings centered */
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.4;
+  text-align: left;        /* paragraphs left-aligned */
+  margin: 0 auto 16px auto;/* centers block while keeping text left-aligned */
+}
+
+button {
+  cursor: pointer;
+}
+
+/* -------------------- SECTIONS -------------------- */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  background-color: #1f2f27; 
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8; 
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-section h2 {
+  margin-bottom: 20px; /* heading font is now unified globally */
+}
+
+.hero-image {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.hero-note {
+  font-size: 16px;
+  font-weight: bold;
+  color: #38bdf8; 
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 16px;        
+  margin-right: 12px;      
+  padding: 10px 20px;
+  background-color: #f57c00;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+/* -------------------- TECH SECTION -------------------- */
+.tech-section {
+  margin-bottom: 40px;      
+}
+
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;                 
+}
+
+.tech-tag {
+  background-color: #1e293b;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  white-space: nowrap;       
+}
+
+/* -------------------- EDUCATION SECTION -------------------- */
+.education-section {
+  margin-top: 20px;
+  text-align: center; /* section centered */
+}
+
+.education-section h2 {
+  margin-bottom: 12px; /* heading font unified globally */
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;        /* centers the list */
+  display: inline-block; /* shrink to content while staying centered */
+  text-align: left;      /* text inside each item left-aligned */
+}
+
+.education-item {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: white;
+}
+
+/* -------------------- CONTACT SECTION -------------------- */
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-section h2 {
+  margin-bottom: 30px; /* heading font unified globally */
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 24px;
+}
+
+.contact-link img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.contact-link.email img {
+  margin-right: 8px;
+}
+
+.contact-link:hover img {
+  transform: scale(1.1);
+}
+
+.contact-link.github img,
+.contact-link.linkedin img {
+  filter: none; 
+}
+
+/* -------------------- HERO SECTION TEXT -------------------- */
+.hero-description,
+.hero-note {
+  text-align: center; /* overrides the global left-align */
+  max-width: none;    /* optional: let it stretch if needed */
+  margin: 0 auto 15px auto; /* keep spacing intact */
+}
+
+.tech-group {
+  margin-bottom: 20px;
+}
+
+.tech-category {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background-color: #1f2f27;
+  padding: 16px 20px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.education-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.education-degree {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DAD7CD;
+  margin-bottom: 4px;
+}
+
+.education-school {
+  font-size: 16px;
+  color: #A8D5BA;
+  margin-bottom: 6px;
+}
+
+.education-period {
+  font-size: 14px;
+  color: #D4AF37;
+}
+
+
+
+.project-card {
+  width: 100%;           /* or a fixed width like 300px */
+  max-width: 350px;      /* prevents it from growing too much */
+  box-sizing: border-box;/* ensures padding is included in width */
+}
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;   /* wrap to next line if too long */
+  gap: 6px;          /* spacing between tech tags */
+  overflow-wrap: anywhere; /* prevent very long words from breaking layout */
+}
